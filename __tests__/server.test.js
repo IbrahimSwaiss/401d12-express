@@ -13,7 +13,7 @@ describe('express server', () => {
         // act
         const response = await request.get(param);
         // assert
-        expect(response.status).toBe(500);
+        expect(response.status).toBe(status);
         expect(response.text).toBe(text);
     });
 
